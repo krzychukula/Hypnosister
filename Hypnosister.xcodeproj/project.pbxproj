@@ -20,6 +20,7 @@
 		015D124D19862A370073D49A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 015D124B19862A370073D49A /* InfoPlist.strings */; };
 		015D124F19862A370073D49A /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D124E19862A370073D49A /* HypnosisterTests.m */; };
 		015D125A19862D8E0073D49A /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D125919862D8E0073D49A /* BNRHypnosisView.m */; };
+		015D125C1986652D0073D49A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 015D125B1986652D0073D49A /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		015D124E19862A370073D49A /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		015D125819862D8E0073D49A /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
 		015D125919862D8E0073D49A /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		015D125B1986652D0073D49A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		015D121D19862A370073D49A = {
 			isa = PBXGroup;
 			children = (
+				015D125B1986652D0073D49A /* logo.png */,
 				015D122F19862A370073D49A /* Hypnosister */,
 				015D124819862A370073D49A /* HypnosisterTests */,
 				015D122819862A370073D49A /* Frameworks */,
@@ -227,6 +230,7 @@
 			files = (
 				015D123419862A370073D49A /* InfoPlist.strings in Resources */,
 				015D123C19862A370073D49A /* Images.xcassets in Resources */,
+				015D125C1986652D0073D49A /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
