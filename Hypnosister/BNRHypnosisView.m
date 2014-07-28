@@ -51,9 +51,49 @@
     [[UIColor lightGrayColor] setStroke];
     [path stroke];
     
+    //gradient
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(currentContext);
+    
+    UIBezierPath *clip = [[UIBezierPath alloc] init];
+    [clip moveToPoint:CGPointMake(center.x, center.y - 100)];
+    [clip addLineToPoint:CGPointMake(center.x - bounds.size.width /2, center.y + 100)];
+    [clip addLineToPoint:CGPointMake(center.x + bounds.size.width /2, center.y + 100)];
+    
+    [clip addClip];
+    
+    CGFloat locations[2] = { 0.0, 1.0 };
+    CGFloat components[8] = {
+        0.0, 1.0, 0.0, 1.0,//red
+        1.0, 1.0, 0.0, 1.0 //yellow
+    };
+    
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
+    
+    CGPoint startPoint = CGPointMake(0, 0);
+    CGPoint endPoint = CGPointMake(20, 400);
+    
+    CGContextDrawLinearGradient(currentContext, gradient, startPoint, endPoint, 0);
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
+    
+    CGContextRestoreGState(currentContext);
+    
+    
+    //iage with shadow
     UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
     
+    CGContextSaveGState(currentContext);
+    
+    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
+    
     [logoImage drawInRect:bounds];
+    
+    CGContextRestoreGState(currentContext);
+    
+    
 }
 
 
