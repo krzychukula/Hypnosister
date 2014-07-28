@@ -19,6 +19,7 @@
 		015D124519862A370073D49A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015D122D19862A370073D49A /* UIKit.framework */; };
 		015D124D19862A370073D49A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 015D124B19862A370073D49A /* InfoPlist.strings */; };
 		015D124F19862A370073D49A /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D124E19862A370073D49A /* HypnosisterTests.m */; };
+		015D125A19862D8E0073D49A /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D125919862D8E0073D49A /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		015D124A19862A370073D49A /* HypnosisterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnosisterTests-Info.plist"; sourceTree = "<group>"; };
 		015D124C19862A370073D49A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		015D124E19862A370073D49A /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		015D125819862D8E0073D49A /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		015D125919862D8E0073D49A /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				015D123919862A370073D49A /* BNRAppDelegate.m */,
 				015D123B19862A370073D49A /* Images.xcassets */,
 				015D123019862A370073D49A /* Supporting Files */,
+				015D125819862D8E0073D49A /* BNRHypnosisView.h */,
+				015D125919862D8E0073D49A /* BNRHypnosisView.m */,
 			);
 			path = Hypnosister;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			files = (
 				015D123619862A370073D49A /* main.m in Sources */,
 				015D123A19862A370073D49A /* BNRAppDelegate.m in Sources */,
+				015D125A19862D8E0073D49A /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
