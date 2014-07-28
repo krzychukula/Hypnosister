@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    CGRect firstFrame = self.window.bounds;
     
     BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
     firstView.backgroundColor = [UIColor redColor];
